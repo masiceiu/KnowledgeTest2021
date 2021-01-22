@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.circles {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.circle  {
+  	display: flex;
+  	text-align: center;
+  	align-items: center;
+  	justify-content: center;
+    
+    width: 25vw;
+    height: 25vw; 
+    margin: 0.2em;
+    font-size: 5vw;
+    border-radius: 50%;
+    border: 5vw solid gray;
+}
+.circle.green
+{
+  	border: 5vw solid green; 
+}
+.circle.green >.text
+{
+  	color: green;
+}
+.circle.red
+{
+  	border: 5vw solid red; 
+}
+.circle.red >.text
+{
+  	color: red;
+}
+</style>
+</head>
+<body>
+<div class="circles">
+  <div class="circle green">
+     <div class="text">
+       <div>Success</div>
+       <strong>90%</strong>
+    </div>
+  </div>
+  <div class="circle red">
+     <div class="text">
+      <div>Failed</div>
+      <strong>10%</strong>
+    </div>
+  </div>
+</div>
+</body>
+</html>
